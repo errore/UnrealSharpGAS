@@ -18,10 +18,14 @@ public class UnrealSharpGASEditor : ModuleRules
             {
                 "CoreUObject",
                 "Engine",
+                "InputCore",
                 "Slate",
                 "SlateCore", 
                 "GameplayAbilities", 
+                "GameplayAbilitiesEditor",
+                "PropertyEditor",
                 "UnrealSharpRuntimeGlue",
+                "UnrealSharpCore",
                 "UnrealEd",
                 "UnrealSharpGAS"
             }
