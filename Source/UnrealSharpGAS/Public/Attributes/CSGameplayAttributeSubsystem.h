@@ -15,6 +15,9 @@ public:
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 	// End of USubsystem interface
 
+	/** Re-cache all gameplay attributes. Safe to call after C# assemblies are loaded. */
+	void ForceRefresh();
+
 	void GetCachedAttributeNamesForClass(const FString& AttributeSetClassName, TArray<FString>& OutAttributeNames) const;
 
 	UFUNCTION(BlueprintCallable)
