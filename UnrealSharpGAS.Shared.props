@@ -1,0 +1,6 @@
+<Project>
+    <ItemGroup>
+        <Analyzer Include="$(MSBuildThisFileDirectory)Binaries\Managed\netstandard2.0\UnrealSharpGAS.CodeGen.dll"
+                  Private="false" CopyToPublishDirectory="Never" />
+    </ItemGroup>
+</Project>
