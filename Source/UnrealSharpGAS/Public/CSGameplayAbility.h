@@ -65,12 +65,10 @@ public:
 	UFUNCTION(meta = (ScriptMethod))
 	void K2_GetDynamicSourceTags(FGameplayTagContainer& TagContainer) const;
 
-	UFUNCTION(BlueprintCallable, Category = "Ability|Tasks",
-		meta = (ScriptMethod, DeterminesOutputType = "TaskClass"))
+	UFUNCTION(meta = (ScriptMethod, DeterminesOutputType = "TaskClass"))
 	UCSAbilityTask* CreateAbilityTask(TSubclassOf<UCSAbilityTask> TaskClass);
 	
-	UFUNCTION(BlueprintCallable, Category = "Ability|Tasks",
-		meta = (ScriptMethod, DeterminesOutputType = "TaskClass"))
+	UFUNCTION(meta = (ScriptMethod, DeterminesOutputType = "TaskClass"))
 	UCSAbilityTask* CreateAbilityTaskAndRunIt(TSubclassOf<UCSAbilityTask> TaskClass);
 	
 protected:
