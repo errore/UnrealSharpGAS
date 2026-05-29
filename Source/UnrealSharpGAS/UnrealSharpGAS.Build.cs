@@ -31,6 +31,17 @@ public class UnrealSharpGAS : ModuleRules
 			}
 			);
 		
+		if (Target.bBuildEditor)
+		{
+			PrivateDependencyModuleNames.AddRange(new string[]
+			{
+				"BlueprintGraph",
+				"UnrealEd",
+				"KismetCompiler",
+				"Kismet",
+			});
+		}
+		
 		PublicDefinitions.Add("FlattenGlue=1");
 	}
 }

@@ -120,10 +120,4 @@ public:
 	
 	UFUNCTION(meta = (ScriptMethod))
 	static UCSAbilityTask* CreateAbilityTaskAndRunIt(TSubclassOf<UCSAbilityTask> Task, UGameplayAbility* InstigatorAbility, FName TaskInstanceName = NAME_None);
-	
-	UPROPERTY(BlueprintAssignable)
-	FCSAbilityTaskDelegate OnTaskActivated;
-	
-	UPROPERTY(BlueprintAssignable)
-	FCSAbilityTaskDelegate OnTaskEnded;
 };

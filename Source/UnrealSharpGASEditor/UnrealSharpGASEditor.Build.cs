@@ -23,7 +23,8 @@ public class UnrealSharpGASEditor : ModuleRules
                 "GameplayAbilities", 
                 "UnrealSharpRuntimeGlue",
                 "UnrealEd",
-                "UnrealSharpGAS"
+                "UnrealSharpGAS",
+                "BlueprintGraph"
             }
         );
         

@@ -9,7 +9,6 @@ void UCSAbilityTask::Activate()
 	Super::Activate();
 	
 	K2_Activate();
-	OnTaskActivated.Broadcast(this);
 }
 
 UCSAbilityTask::UCSAbilityTask(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
@@ -30,7 +29,6 @@ void UCSAbilityTask::OnDestroy(bool bInOwnerFinished)
 	Super::OnDestroy(bInOwnerFinished);
 	
 	K2_OnDestroy(bInOwnerFinished);
-	OnTaskEnded.Broadcast(this);
 }
 
 void UCSAbilityTask::InitSimulatedTask(UGameplayTasksComponent& InGameplayTasksComponent)
