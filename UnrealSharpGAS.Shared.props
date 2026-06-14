@@ -5,4 +5,12 @@
         <Compile Include="$(MSBuildThisFileDirectory)Script\UnrealSharpGAS.Glue\Attributes\*.cs"
                  Link="UnrealSharpGAS.Glue\Attributes\%(Filename)%(Extension)" />
     </ItemGroup>
+
+    <Target Name="BuildUnrealSharpGASCodeGen" BeforeTargets="ResolveAssemblyReferences"
+            Inputs="$(MSBuildThisFileDirectory)CodeGen\**\*.cs"
+            Outputs="$(MSBuildThisFileDirectory)Binaries\Managed\netstandard2.0\UnrealSharpGAS.CodeGen.dll">
+        <MSBuild Projects="$(MSBuildThisFileDirectory)CodeGen\UnrealSharpGAS.CodeGen.csproj"
+                 Targets="Build"
+                 BuildInParallel="false" />
+    </Target>
 </Project>
