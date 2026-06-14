@@ -27,7 +27,8 @@ public class UnrealSharpGASEditor : ModuleRules
                 "UnrealSharpRuntimeGlue",
                 "UnrealSharpCore",
                 "UnrealEd",
-                "UnrealSharpGAS"
+                "UnrealSharpGAS",
+                "BlueprintGraph"
             }
         );
         
