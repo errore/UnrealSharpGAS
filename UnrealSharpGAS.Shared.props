@@ -2,5 +2,7 @@
     <ItemGroup>
         <Analyzer Include="$(MSBuildThisFileDirectory)Binaries\Managed\netstandard2.0\UnrealSharpGAS.CodeGen.dll"
                   Private="false" CopyToPublishDirectory="Never" />
+        <Compile Include="$(MSBuildThisFileDirectory)Script\UnrealSharpGAS.Glue\Attributes\*.cs"
+                 Link="UnrealSharpGAS.Glue\Attributes\%(Filename)%(Extension)" />
     </ItemGroup>
 </Project>
