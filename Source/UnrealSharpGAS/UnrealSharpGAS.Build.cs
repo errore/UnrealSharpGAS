@@ -43,5 +43,6 @@ public class UnrealSharpGAS : ModuleRules
 		}
 		
 		PublicDefinitions.Add("FlattenGlue=1");
+		PublicDefinitions.Add("ExtendModule=GameplayAbilities");
 	}
 }
